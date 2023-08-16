@@ -16,8 +16,8 @@ public class ExpoNativeConfigurationModule: Module, PKPaymentAuthorizationViewCo
         request.merchantIdentifier = arguments["merchantId"] as! String
         request.supportedNetworks = [.visa, .masterCard, .amex]
         request.merchantCapabilities = .capability3DS
-        request.countryCode = "US"
-        request.currencyCode = "USD"
+        request.countryCode = "FR"
+        request.currencyCode = "EUR"
         request.paymentSummaryItems = [
           PKPaymentSummaryItem(label: "Item", amount: NSDecimalNumber(decimal: Decimal(arguments["amount"] as! Double)))
         ]
