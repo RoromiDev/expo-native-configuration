@@ -3,7 +3,7 @@ import {
     withAndroidManifest,
     AndroidConfig,
     ConfigPlugin,
-  } from 'expo/config-plugins';
+  } from '@expo/config-plugins';
   
   const withMyApiKey: ConfigPlugin<{ apiKey: string }> = (config, { apiKey }) => {
     config = withInfoPlist(config, config => {
